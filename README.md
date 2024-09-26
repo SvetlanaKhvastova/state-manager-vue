@@ -1,4 +1,6 @@
-# my-project
+# state manager (sort products, remove product, add product)
+# https://loading.io/css
+# https://dummyjson.com/products?limit=${limit}
 
 ## Project setup
 ```

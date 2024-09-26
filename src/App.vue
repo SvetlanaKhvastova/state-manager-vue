@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ProductList />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { defineComponent } from 'vue'
+import ProductList from './components/ProductList.vue'
 
-export default {
-  name: 'App',
+export default defineComponent({
   components: {
-    HelloWorld
+    ProductList
+  },
+  setup() {
+    return {}
   }
-}
+})
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: Lexend, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
+  background: #79c56e;
+  border-radius: 6px;
+
 }
 </style>
